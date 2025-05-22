@@ -27,52 +27,59 @@ A web application for managing academic research activities within a university.
 ---
 
 ## Project Structure
+```
 src/
 ├── main/
-│ ├── java/com/rou/test2/ # Controllers and main application
-│ └── resources/
-│ └── application.properties # DB configuration
-│ └── webapp/
-│ └── web/WEB-INF/ # JSP views and web.xml
-├── test/ # Unit tests (basic setup)
-
+│   ├── java/com/rou/test2/               # Controllers and main application
+│   ├── resources/
+│   │   └── application.properties        # DB configuration
+│   └── webapp/
+│       └── web/WEB-INF/                  # JSP views and web.xml
+└── test/                                 # Unit tests (basic setup)
+```
 ---
 
 ##  Getting Started
 
 ### 1. Clone the Repository
-
+```bash
 git clone https://github.com/MarzhanOmarbekova/Research-University-Platform.git
 cd Research-University-Platform
+```
 
 ### 2. Configure the Database
 Make sure PostgreSQL is running locally.
 Update the src/main/resources/application.properties with your DB credentials:
 
+```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/your_db_name
 spring.datasource.username=your_username
 spring.datasource.password=your_password
+```
 
 
 ### 3. Run the Application
-If using Maven Wrapper (Windows):
+```bash
+# Windows
 mvnw spring-boot:run
 
-Or (Linux/macOS):
+# Linux/macOS
 ./mvnw spring-boot:run
-
+```
 Then go to http://localhost:8080 in your browser.
 
-## Developer Role
-This project was built as an individual university assignment. I implemented the full backend logic using Spring Boot, designed the JSP-based frontend, and integrated PostgreSQL for data persistence. The project includes:
+##  Developer Role
 
-Connecting entity classes with the database
+This project was built as an individual university assignment. I implemented the full backend logic using Spring Boot, designed the JSP-based frontend, and integrated PostgreSQL for data persistence.
 
-Creating logic for user roles and research features
+Key contributions:
 
-Managing admin panel views and researcher workflows
-
-Enabling user-specific actions like subscriptions and publication management
+- Connected entity classes with the database
+- Created logic for user roles and research features
+- Managed admin panel views and researcher workflows
+- Enabled user-specific actions like subscriptions and publication management
 
 ## Author
-Marzhan Omarbekova
+**Marzhan Omarbekova**  
+GitHub: [@MarzhanOmarbekova](https://github.com/MarzhanOmarbekova)  
+Email: mark.omarbek@gmail.com  
